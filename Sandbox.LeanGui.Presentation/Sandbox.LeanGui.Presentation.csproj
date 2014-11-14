@@ -44,9 +44,6 @@
     <Compile Include="Views\View.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="System" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\Sandbox.LeanGui.Application\Sandbox.LeanGui.Application.csproj">
       <Project>{89637DF3-7B5E-4D57-BEB2-4AB0723F2E2B}</Project>
       <Name>Sandbox.LeanGui.Application</Name>

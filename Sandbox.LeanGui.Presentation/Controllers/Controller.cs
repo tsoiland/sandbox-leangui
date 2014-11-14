@@ -1,7 +1,5 @@
 ﻿namespace Sandbox.LeanGui.Presentation.Controllers
 {
-    using System.Collections.Specialized;
-
     using Sandbox.LeanGui.Application;
     using Sandbox.LeanGui.Presentation.FrameworkStuff;
     using Sandbox.LeanGui.Presentation.Views;
@@ -15,11 +13,8 @@
             this.backendService = backendService;
         }
 
-        public View Action(NameValueCollection queryString)
+        public View Action(int tripId)
         {
-            // Parse parameter from http.
-            var tripId = int.Parse(queryString.Get("tripId"));
-
             // Get data from our backend.
             var trip = this.backendService.GetTrip(tripId);
 

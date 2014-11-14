@@ -19,34 +19,30 @@
             // Process requests
             while (true)
             {
-                try
+                // Listen for http requests
+                var context = httpListener.GetContext();
+                var request = context.Request;
+
+                // Ignore some bullshit I don't want to look up.
+                if (request.RawUrl == "/favicon.ico")
                 {
-                    // Listen for http requests
-                    var context = httpListener.GetContext();
-                    var request = context.Request;
-
-                    // Ignore some bullshit I don't want to look up.
-                    if (request.RawUrl == "/favicon.ico")
-                    {
-                        continue;
-                    }
-
-                    // Call the controller
-                    var view = controller.GetType().GetMethod("Action").Invoke(controller, new object[] {request.QueryString});
-
-                    // Render the returned view
-                    var result = (string)view.GetType().GetMethod("Render").Invoke(view, new object[0]);
-
-                    // Send http response
-                    var byteData = Encoding.Default.GetBytes(result);
-                    context.Response.OutputStream.Write(byteData, 0, byteData.Length);
-                    context.Response.OutputStream.Close();
+                    continue;
                 }
-                catch (Exception e)
-                {
-                    Console.Out.WriteLine("Exception: " + e.Message);
-                    Console.Out.WriteLine(e.StackTrace);
-                }
+
+                // Parse http querystring
+                var s = request.QueryString.Get("tripId");
+                var tripId = !string.IsNullOrEmpty(s) ? int.Parse(request.QueryString.Get("tripId")) : 1;
+
+                // Call the controller
+                var view = controller.GetType().GetMethod("Action").Invoke(controller, new object[] { tripId});
+
+                // Render the returned view
+                var result = (string)view.GetType().GetMethod("Render").Invoke(view, new object[0]);
+
+                // Send http response
+                var byteData = Encoding.Default.GetBytes(result);
+                context.Response.OutputStream.Write(byteData, 0, byteData.Length);
+                context.Response.OutputStream.Close();
             }
         }
     }
