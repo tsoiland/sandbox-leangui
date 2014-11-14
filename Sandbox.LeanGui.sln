@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sandbox.LeanGui.Presentation", "Sandbox.LeanGui.Presentation\Sandbox.LeanGui.Presentation.csproj", "{57680A2E-68CB-428F-AC9A-8EF4F4DDAA57}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sandbox.LeanGui.WebServer", "Sandbox.LeanGui.WebServer\Sandbox.LeanGui.WebServer.csproj", "{6FDF8B21-4984-4CD4-BEA2-A8FC53C39958}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sandbox.LeanGui.Application", "Sandbox.LeanGui.Application\Sandbox.LeanGui.Application.csproj", "{89637DF3-7B5E-4D57-BEB2-4AB0723F2E2B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sandbox.LeanGui.Presentation.Bad", "Sandbox.LeanGui.Presentation.Bad\Sandbox.LeanGui.Presentation.Bad.csproj", "{3F443185-DA2A-4933-9444-88218D45A05A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sandbox.LeanGui.Application.Bad", "Sandbox.LeanGui.Application.Bad\Sandbox.LeanGui.Application.Bad.csproj", "{79188DDB-EE15-40B3-B843-BECC4FE78092}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Good", "Good", "{62B48927-BB49-4D76-9843-FE40055F9D26}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Bad", "Bad", "{AE9C5234-75D8-40BF-B2F8-86FB860C19E6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{57680A2E-68CB-428F-AC9A-8EF4F4DDAA57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57680A2E-68CB-428F-AC9A-8EF4F4DDAA57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57680A2E-68CB-428F-AC9A-8EF4F4DDAA57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57680A2E-68CB-428F-AC9A-8EF4F4DDAA57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FDF8B21-4984-4CD4-BEA2-A8FC53C39958}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FDF8B21-4984-4CD4-BEA2-A8FC53C39958}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FDF8B21-4984-4CD4-BEA2-A8FC53C39958}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FDF8B21-4984-4CD4-BEA2-A8FC53C39958}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89637DF3-7B5E-4D57-BEB2-4AB0723F2E2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89637DF3-7B5E-4D57-BEB2-4AB0723F2E2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89637DF3-7B5E-4D57-BEB2-4AB0723F2E2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89637DF3-7B5E-4D57-BEB2-4AB0723F2E2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F443185-DA2A-4933-9444-88218D45A05A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F443185-DA2A-4933-9444-88218D45A05A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F443185-DA2A-4933-9444-88218D45A05A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F443185-DA2A-4933-9444-88218D45A05A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79188DDB-EE15-40B3-B843-BECC4FE78092}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79188DDB-EE15-40B3-B843-BECC4FE78092}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79188DDB-EE15-40B3-B843-BECC4FE78092}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79188DDB-EE15-40B3-B843-BECC4FE78092}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{89637DF3-7B5E-4D57-BEB2-4AB0723F2E2B} = {62B48927-BB49-4D76-9843-FE40055F9D26}
+		{57680A2E-68CB-428F-AC9A-8EF4F4DDAA57} = {62B48927-BB49-4D76-9843-FE40055F9D26}
+		{79188DDB-EE15-40B3-B843-BECC4FE78092} = {AE9C5234-75D8-40BF-B2F8-86FB860C19E6}
+		{3F443185-DA2A-4933-9444-88218D45A05A} = {AE9C5234-75D8-40BF-B2F8-86FB860C19E6}
+	EndGlobalSection
+EndGlobal
